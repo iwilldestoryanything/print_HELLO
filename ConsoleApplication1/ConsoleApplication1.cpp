@@ -1,11 +1,26 @@
-﻿// ConsoleApplication1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿#include <iostream>
 
-#include <iostream>
+using namespace std;
+
+void check_pass(string password)
+{
+    string valid_pass = "qwerty123";
+    if (password == valid_pass) {
+        cout << "Доступ разрешен." << endl;
+    }
+    else {
+        cout << "Неверный пароль!" << endl;
+    }
+}
+void printSomeText() {
+    cout << "hi homies";
+}
+
 
 int main()
 {
     std::cout << "Hello World!\n";
+    printSomeText();
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
